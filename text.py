@@ -36,3 +36,4 @@ for i in range(len(a)):
 print("minimum number is ",min)
 
 '''
+print("byeeeee")
