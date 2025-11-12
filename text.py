@@ -23,6 +23,5 @@ print(f"SHA-1 hash of '{input_str}': {hashed_str}")
 
 print('bye bye /......')
 
-
 for i in range(0,12):
     print(i)
