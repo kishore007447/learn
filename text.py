@@ -6,3 +6,5 @@ for i in l:
         print("eligible to vote")
     else:
         print("not eligible to vote")
+
+#end of code
