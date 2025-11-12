@@ -19,9 +19,18 @@ input_str = "Hello, World!"
 hashed_str = hash_string(input_str)
 print(f"SHA-1 hash of '{input_str}': {hashed_str}")
 
-'''
+
 
 print('bye bye /......')
 
 for i in range(0,12):
     print(i)
+
+'''
+
+a=[12,54,23,5,76]
+min=a[0]
+for i in range(len(a)):
+    if(a[i]<min):
+        min=a[i]
+print("minimum number is ",min)
