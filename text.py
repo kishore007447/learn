@@ -19,3 +19,5 @@ input_str = "Hello, World!"
 hashed_str = hash_string(input_str)
 print(f"SHA-1 hash of '{input_str}': {hashed_str}")
 '''
+
+print('bye bye /......')
