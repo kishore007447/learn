@@ -37,6 +37,7 @@ print("minimum number is ",min)
 
 '''
 
+# added decrement program 
 def decrementList(arr):
     #code here
     n=len(arr)
