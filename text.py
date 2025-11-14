@@ -36,8 +36,12 @@ for i in range(len(a)):
 print("minimum number is ",min)
 
 '''
-print("byeeeee")
 
-
-
-print("hello world")
+def decrementList(arr):
+    #code here
+    n=len(arr)
+    for i in range(n):
+        arr[i]=arr[i]-1
+    for i in arr:
+        print(i,end=' ')
+decrementList([5,10,15,20])
