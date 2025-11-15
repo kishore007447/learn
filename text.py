@@ -46,3 +46,11 @@ def decrementList(arr):
     for i in arr:
         print(i,end=' ')
 decrementList([5,10,15,20])
+
+
+#end of code
+
+# 1 - 10 square 
+for i in range(1,11):
+    print(i*i)
+    
