@@ -36,7 +36,7 @@ for i in range(len(a)):
 print("minimum number is ",min)
 
 '''
-
+'''
 # added decrement program 
 def decrementList(arr):
     #code here
@@ -64,3 +64,7 @@ for i in l:
     if(i>max):
         max=i
 print("greatest number is ",max)    
+'''
+#reverse a string 
+s="kishore"
+print(s[::-1])
