@@ -55,4 +55,12 @@ for i in range(1,11):
     print(i*i)
 
 # end of code
-    
+
+#greatest number 
+
+l=[1,3,4323,12,32,0]
+max=l[0]
+for i in l:
+    if(i>max):
+        max=i
+print("greatest number is ",max)    
