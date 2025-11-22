@@ -68,3 +68,12 @@ print("greatest number is ",max)
 #reverse a string 
 s="kishore"
 print(s[::-1])
+
+def isPalindrome(s):
+    #code here
+    temp=s
+    if(temp.lower()==s[::-1].lower()):
+        return 'True'
+    else:
+        return 'False'
+    
