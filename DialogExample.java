@@ -68,7 +68,7 @@ public class WindowAdapterExample {
     }
 }
 
-*/
+
 
 //mouse clicked at x nd y coordinates
 
@@ -89,3 +89,73 @@ public class MouseAdapterExample {
         frame.setVisible(true);
     }
 }           
+
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class SimpleForm extends Frame {
+
+    public SimpleForm() {
+        setTitle("Simple Form");
+        setSize(300, 150);
+        setLayout(new FlowLayout());
+
+        Label label = new Label("Enter Name:");
+        TextField textField = new TextField(15);
+        Button submitButton = new Button("Submit");
+
+        add(label);
+        add(textField);
+        add(submitButton);
+
+        // Event handling for button
+        submitButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("You entered: " + textField.getText());
+            }
+        });
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
+            }
+        });
+
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new SimpleForm();
+    }
+}
+
+*/
+
+import javax.swing.*;
+
+public class DialogExample {
+    public static void main(String[] args) {
+
+        // Create frame
+        JFrame frame = new JFrame("Dialog Box Demo");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+
+        // Create button
+        JButton btn = new JButton("Show Dialog");
+        btn.setBounds(80, 60, 130, 30);
+
+        // Action Listener to show dialog box
+        btn.addActionListener(e -> {
+            JOptionPane.showMessageDialog(frame,
+                    "This is a Dialog Box!",
+                    "Message",
+                    JOptionPane.INFORMATION_MESSAGE);
+        });
+
+        frame.add(btn);
+        frame.setVisible(true);
+    }
+}
