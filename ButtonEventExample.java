@@ -130,7 +130,7 @@ public class SimpleForm extends Frame {
     }
 }
 
-*/
+
 
 import javax.swing.*;
 
@@ -159,3 +159,46 @@ public class DialogExample {
         frame.setVisible(true);
     }
 }
+
+import javax.swing.*;
+
+public class DialogDemo {
+    public static void main(String[] args) {
+
+        // Creating a basic frame
+        JFrame frame = new JFrame("Dialog Demo");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Message Dialog
+        JOptionPane.showMessageDialog(frame,
+                "This is an information dialog!",
+                "Info",
+                JOptionPane.INFORMATION_MESSAGE);
+
+        // Confirmation Dialog
+        int choice = JOptionPane.showConfirmDialog(frame,
+                "Do you want to continue?",
+                "Confirm",
+                JOptionPane.YES_NO_OPTION);
+
+        if(choice == JOptionPane.YES_OPTION) {
+            // Input Dialog
+            String name = JOptionPane.showInputDialog(frame,
+                    "Enter your name:");
+
+            JOptionPane.showMessageDialog(frame,
+                    "Hello, " + name + "!",
+                    "Greeting",
+                    JOptionPane.PLAIN_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(frame,
+                    "Operation cancelled.",
+                    "Cancelled",
+                    JOptionPane.WARNING_MESSAGE);
+        }
+
+        frame.setVisible(true);
+    }
+}
+*/
