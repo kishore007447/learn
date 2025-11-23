@@ -17,7 +17,7 @@ public class ButtonExample {
         frame.setSize(300, 200);
         frame.setLayout(null);
         button.setBounds(100, 70, 100, 30);
-        frame.setVisible(true);
+        frame.setVisible(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
