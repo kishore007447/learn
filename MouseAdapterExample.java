@@ -46,7 +46,7 @@ class button{
     }
 }
 
-*/
+
 
 import java.awt.*;
 import java.awt.event.*;
@@ -67,3 +67,25 @@ public class WindowAdapterExample {
         frame.setVisible(true);
     }
 }
+
+*/
+
+//mouse clicked at x nd y coordinates
+
+import java.awt.*;
+import java.awt.event.*; 
+public class MouseAdapterExample {
+    public static void main(String[] args) {
+
+        Frame frame = new Frame("Mouse Adapter Example");
+
+        frame.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Mouse clicked at: (" + e.getX() + ", " + e.getY() + ")");
+            }
+        });
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}           
